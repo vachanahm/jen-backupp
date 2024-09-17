@@ -11,7 +11,7 @@ TIMESTAMP=$(date +"%Y-%m-%d")
 cd $BACKUP_REPO
 
 
-sudo rsync -av --delete $JENKINS_DIR/* $BACKUP_REPO/
+ sudo cp -r  $JENKINS_DIR/* $BACKUP_REPO/
 
 
 git add .
