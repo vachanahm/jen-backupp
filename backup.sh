@@ -11,7 +11,7 @@ TIMESTAMP=$(date +"%Y-%m-%d")
 cd $BACKUP_REPO
 
 # Copy the contents of the Jenkins directory
-rsync -av --delete $JENKINS_DIR/* $BACKUP_REPO/
+sudo rsync -av --delete $JENKINS_DIR/* $BACKUP_REPO/
 
 # Add any new or updated files to the repository
 git add .
